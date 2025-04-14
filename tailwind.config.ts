@@ -52,6 +52,23 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				finance: {
+					primary: '#0A2463',
+					secondary: '#247BA0',
+					success: '#2A9D8F',
+					danger: '#E63946',
+					warning: '#F4A261',
+					info: '#118AB2',
+					light: '#F8F9FA',
+					dark: '#1D3557',
+					chart: {
+						green: '#25C685',
+						red: '#F45B69',
+						blue: '#118AB2',
+						yellow: '#F4A261',
+						purple: '#6F58C9',
+					}
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
