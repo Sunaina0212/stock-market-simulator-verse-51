@@ -1,4 +1,3 @@
-
 import { StockData, StockHistory, StockHistoryPoint } from "../types";
 
 // Mock stock data
@@ -91,6 +90,94 @@ const mockStocks: Record<string, StockData> = {
     high: 886.41,
     low: 865.42
   },
+  RELIANCE: {
+    symbol: "RELIANCE",
+    name: "Reliance Industries Ltd.",
+    price: 2891.45,
+    change: 15.70,
+    changePercent: 0.55,
+    marketCap: 1960000000000,
+    volume: 3521640,
+    high: 2905.25,
+    low: 2875.80
+  },
+  TCS: {
+    symbol: "TCS",
+    name: "Tata Consultancy Services Ltd.",
+    price: 3755.60,
+    change: -22.40,
+    changePercent: -0.59,
+    marketCap: 1375000000000,
+    volume: 982560,
+    high: 3785.90,
+    low: 3745.15
+  },
+  HDFCBANK: {
+    symbol: "HDFCBANK",
+    name: "HDFC Bank Ltd.",
+    price: 1678.35,
+    change: 12.85,
+    changePercent: 0.77,
+    marketCap: 1260000000000,
+    volume: 4526780,
+    high: 1685.60,
+    low: 1670.25
+  },
+  INFY: {
+    symbol: "INFY",
+    name: "Infosys Ltd.",
+    price: 1432.75,
+    change: -18.25,
+    changePercent: -1.26,
+    marketCap: 592000000000,
+    volume: 3245670,
+    high: 1445.90,
+    low: 1425.30
+  },
+  BHARTIARTL: {
+    symbol: "BHARTIARTL",
+    name: "Bharti Airtel Ltd.",
+    price: 1167.50,
+    change: 8.45,
+    changePercent: 0.73,
+    marketCap: 652000000000,
+    volume: 2134560,
+    high: 1172.40,
+    low: 1158.75
+  },
+  ITC: {
+    symbol: "ITC",
+    name: "ITC Ltd.",
+    price: 428.95,
+    change: 3.25,
+    changePercent: 0.76,
+    marketCap: 532000000000,
+    volume: 6234570,
+    high: 430.50,
+    low: 426.80
+  },
+  ICICIBANK: {
+    symbol: "ICICIBANK",
+    name: "ICICI Bank Ltd.",
+    price: 1023.45,
+    change: 7.80,
+    changePercent: 0.77,
+    marketCap: 714000000000,
+    volume: 5123450,
+    high: 1028.90,
+    low: 1018.65
+  },
+  HINDUNILVR: {
+    symbol: "HINDUNILVR",
+    name: "Hindustan Unilever Ltd.",
+    price: 2456.75,
+    change: -12.35,
+    changePercent: -0.50,
+    marketCap: 577000000000,
+    volume: 1234560,
+    high: 2470.80,
+    low: 2450.25
+  }
 };
 
 // Simulate real-time price updates
