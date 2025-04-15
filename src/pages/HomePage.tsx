@@ -1,12 +1,19 @@
 
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { useNavigate } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import StockSearch from '@/components/StockSearch';
 import TopStocksGrid from '@/components/TopStocksGrid';
 import MarketOverview from '@/components/MarketOverview';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { useAuth } from '@/context/AuthContext';
 
 export default function HomePage() {
+  const navigate = useNavigate();
+  const { isAuthenticated, user } = useAuth();
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Helmet>
@@ -16,6 +23,37 @@ export default function HomePage() {
       <Navigation />
       
       <main className="flex-grow container mx-auto px-4 py-8">
+        {/* Wallet Section */}
+        <section className="mb-8">
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-gradient-to-br from-finance-primary to-finance-secondary">
+              <CardContent className="p-6">
+                <div className="flex items-center justify-between">
+                  <div className="space-y-1">
+                    <h2 className="text-white text-2xl font-semibold">Trading Wallet</h2>
+                    {isAuthenticated ? (
+                      <p className="text-white text-3xl font-bold">
+                        ${user?.balance.toLocaleString()}
+                      </p>
+                    ) : (
+                      <p className="text-white/80">Start with $100,000 virtual cash</p>
+                    )}
+                  </div>
+                  {!isAuthenticated && (
+                    <Button 
+                      onClick={() => navigate('/register')} 
+                      className="bg-white text-finance-primary hover:bg-white/90"
+                      size="lg"
+                    >
+                      Start Trading
+                    </Button>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         {/* Hero Section */}
         <section className="mb-12">
           <div className="text-center mb-8">
