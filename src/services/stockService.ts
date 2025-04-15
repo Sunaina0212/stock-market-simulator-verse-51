@@ -177,6 +177,72 @@ const mockStocks: Record<string, StockData> = {
     volume: 1234560,
     high: 2470.80,
     low: 2450.25
+  },
+  ADANIPOWER: {
+    symbol: "ADANIPOWER",
+    name: "Adani Power Ltd.",
+    price: 545.75,
+    change: 8.25,
+    changePercent: 1.53,
+    marketCap: 210000000000,
+    volume: 3245670,
+    high: 548.90,
+    low: 538.30
+  },
+  ADANISTEEL: {
+    symbol: "ADANISTEEL",
+    name: "Adani Steel Ltd.",
+    price: 287.45,
+    change: 3.75,
+    changePercent: 1.32,
+    marketCap: 156000000000,
+    volume: 2134560,
+    high: 289.40,
+    low: 283.75
+  },
+  TATAPOWER: {
+    symbol: "TATAPOWER",
+    name: "Tata Power Company Ltd.",
+    price: 432.60,
+    change: 5.85,
+    changePercent: 1.37,
+    marketCap: 138000000000,
+    volume: 4526780,
+    high: 435.60,
+    low: 428.25
+  },
+  TEJASNET: {
+    symbol: "TEJASNET",
+    name: "Tejas Networks Ltd.",
+    price: 892.35,
+    change: 12.85,
+    changePercent: 1.46,
+    marketCap: 82000000000,
+    volume: 1234560,
+    high: 895.60,
+    low: 880.25
+  },
+  CDS: {
+    symbol: "CDS",
+    name: "Clearing Corporation of India Ltd.",
+    price: 345.75,
+    change: -2.25,
+    changePercent: -0.65,
+    marketCap: 45000000000,
+    volume: 982560,
+    high: 348.90,
+    low: 343.15
+  },
+  EXCITEINDIA: {
+    symbol: "EXCITEINDIA",
+    name: "Excite India Trading Ltd.",
+    price: 178.45,
+    change: 3.25,
+    changePercent: 1.85,
+    marketCap: 28000000000,
+    volume: 756430,
+    high: 180.50,
+    low: 175.80
   }
 };
 
